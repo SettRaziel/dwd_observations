@@ -1,0 +1,12 @@
+# documentation folders and files
+doc/
+.yardoc/
+
+# dev testing folder
+dev/
+
+# exclude coverage files
+coverage/
+
+# exclude gem informations
+*.gem
