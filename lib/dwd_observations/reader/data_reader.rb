@@ -2,10 +2,11 @@
 # @Author: Benjamin Held
 # @Date:   2020-11-07 18:00:04
 # @Last Modified by:   Benjamin Held
-# @Last Modified time: 2020-11-08 20:04:28
+# @Last Modified time: 2020-11-08 20:33:03
 
-require 'ruby_utils/file_reader'
-require 'ruby_utils/data_repository'
+require "ruby_utils/file_reader"
+require "ruby_utils/data_repository"
+require "dwd_observations/reader"
 
 module DwdObservations
 
@@ -17,7 +18,9 @@ module DwdObservations
 
     # initialization
     # @param [String] data_path the path to the observation data
-    def initialize(data_path)
+    def initialize(data_path, meta_path)
+      meta_data = DwdObservations::MetaReader.new(meta_path).meta_data
+      @data_repository = RubyUtils::DataRepository.new(meta_data)
       read_data(RubyUtils::FileReader.new(data_path, ";").data)
     end
 
