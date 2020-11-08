@@ -2,7 +2,7 @@
 # @Author: Benjamin Held
 # @Date:   2020-11-07 18:00:04
 # @Last Modified by:   Benjamin Held
-# @Last Modified time: 2020-11-08 20:33:03
+# @Last Modified time: 2020-11-08 21:14:44
 
 require "ruby_utils/file_reader"
 require "ruby_utils/data_repository"
@@ -21,13 +21,13 @@ module DwdObservations
     def initialize(data_path, meta_path)
       meta_data = DwdObservations::MetaReader.new(meta_path).meta_data
       @data_repository = RubyUtils::DataRepository.new(meta_data)
-      read_data(RubyUtils::FileReader.new(data_path, ";").data)
+      # drop the first element since it holds the column informations
+      read_data(RubyUtils::FileReader.new(data_path, ";").data.drop(1))
     end
 
     private
 
-    # abstract method which parses the required meta information from the 
-    # head line    
+    # abstract method to create the measurand data from the input data
     # @abstract subclasses need to implement this method
     # @param [Array] data an array with the read data
     def read_data(data)
