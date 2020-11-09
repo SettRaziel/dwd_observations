@@ -2,11 +2,11 @@
 # @Author: Benjamin Held
 # @Date:   2020-11-07 18:00:04
 # @Last Modified by:   Benjamin Held
-# @Last Modified time: 2020-11-08 21:14:44
+# @Last Modified time: 2020-11-09 21:53:14
 
 require "ruby_utils/file_reader"
 require "ruby_utils/data_repository"
-require "dwd_observations/reader"
+require "ruby_utils/string"
 
 module DwdObservations
 
