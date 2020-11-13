@@ -2,13 +2,14 @@
 # @Author: Benjamin Held
 # @Date:   2020-11-07 18:12:55
 # @Last Modified by:   Benjamin Held
-# @Last Modified time: 2020-11-07 19:08:29
+# @Last Modified time: 2020-11-13 21:56:19
 
 require "ruby_utils/meta_data"
 require "ruby_utils/parameter_converter"
 
 module DwdObservations
 
+  # Data class to store the meta information of the observation station
   class MetaData < RubyUtils::MetaData
 
     # @return [Integer] the corresponding grid point

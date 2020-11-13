@@ -1,10 +1,11 @@
 # @Author: Benjamin Held
 # @Date:   2018-06-02 13:02:30
 # @Last Modified by:   Benjamin Held
-# @Last Modified time: 2020-11-11 19:34:35
+# @Last Modified time: 2020-11-13 22:04:22
 
 module DwdObservations
 
+  # Simple data class representing wind data
   class Wind < Data
 
     # @return [Float] the wind speed in [m/s]

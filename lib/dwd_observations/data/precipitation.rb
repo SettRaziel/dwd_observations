@@ -1,10 +1,11 @@
 # @Author: Benjamin Held
 # @Date:   2018-06-02 13:05:59
 # @Last Modified by:   Benjamin Held
-# @Last Modified time: 2020-11-09 19:05:04
+# @Last Modified time: 2020-11-13 22:03:20
 
 module DwdObservations
 
+  # Simple data class representing precipitation data
   class Precipitation < Data
 
     # @return [Float] the amount of precipitation in [mm/h]
