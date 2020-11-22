@@ -2,7 +2,7 @@
 # @Author: Benjamin Held
 # @Date:   2020-11-19 19:37:51
 # @Last Modified by:   Benjamin Held
-# @Last Modified time: 2020-11-22 15:50:09
+# @Last Modified time: 2020-11-22 16:13:55
 
 require "ruby_utils/statistic"
 require "ruby_utils/string"
@@ -69,7 +69,7 @@ module DwdObservations
         }
         means
       rescue NoMethodError
-        raise ArgumentError, "Error: Given measurand #{symbol} does not exist for this data.".red
+        raise ArgumentError, "Error: Given measurand #{measurand} does not exist for this data.".red
       end
 
     end
