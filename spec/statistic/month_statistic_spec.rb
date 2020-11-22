@@ -2,7 +2,7 @@
 # @Author: Benjamin Held
 # @Date:   2020-11-19 19:58:04
 # @Last Modified by:   Benjamin Held
-# @Last Modified time: 2020-11-22 16:17:06
+# @Last Modified time: 2020-11-22 16:40:11
 
 require "time"
 require "spec_helper"
@@ -26,6 +26,20 @@ describe DwdObservations::Statistic::Month do
   end
 
   describe ".create_month_statistic_for" do
+    context "given a text file with oberservated humidity data" do
+      it "reads the data and calculates the monthly means for june" do
+        reader = DwdObservations::TemperatureReader.new(
+                 File.join(__dir__,"../files/month_temp_00433.txt"),
+                 File.join(__dir__,"../files/meta_data_00433.txt"))
+        statistic = DwdObservations::Statistic::Month.new(reader.data_repository)
+        means = statistic.create_month_statistic_for(6, :humidity)
+        expect(means[2014]).to eq(73.0)
+        expect(means[2019]).to eq(26.333)
+      end
+    end
+  end
+
+  describe ".create_month_statistic_for" do
     context "given a text file with oberservated temperature data" do
       it "reads the data and calculates the monthly means for june" do
         reader = DwdObservations::TemperatureReader.new(
@@ -39,6 +53,34 @@ describe DwdObservations::Statistic::Month do
   end
 
   describe ".create_month_statistic_for" do
+    context "given a text file with oberservated pressure data" do
+      it "reads the data and calculates the monthly means for october" do
+        reader = DwdObservations::PressureReader.new(
+                 File.join(__dir__,"../files/pressure_hourly_00433.txt"),
+                 File.join(__dir__,"../files/meta_data_00433.txt"))
+        statistic = DwdObservations::Statistic::Month.new(reader.data_repository)
+        means = statistic.create_month_statistic_for(10, :station_pressure)
+        expect(means.keys.length).to eq(1)
+        expect(means[2020]).to eq(991.73)
+      end
+    end
+  end
+
+  describe ".create_month_statistic_for" do
+    context "given a text file with oberservated pressure data for october" do
+      it "reads the data and get no values for june" do
+        reader = DwdObservations::PressureReader.new(
+                 File.join(__dir__,"../files/pressure_hourly_00433.txt"),
+                 File.join(__dir__,"../files/meta_data_00433.txt"))
+        statistic = DwdObservations::Statistic::Month.new(reader.data_repository)
+        means = statistic.create_month_statistic_for(6, :station_pressure)
+        expect(means.keys.length).to eq(0)
+        expect(means[2020]).to be_nil
+      end
+    end
+  end
+
+  describe ".create_month_statistic_for" do
     context "given a text file with oberservated temperature data" do
       it "reads the data and query the wrong measurand for the data" do
         reader = DwdObservations::TemperatureReader.new(
@@ -46,7 +88,7 @@ describe DwdObservations::Statistic::Month do
                  File.join(__dir__,"../files/meta_data_00433.txt"))
         statistic = DwdObservations::Statistic::Month.new(reader.data_repository)
         expect{
-          means = statistic.create_month_statistic_for(6, :foo)
+          statistic.create_month_statistic_for(6, :foo)
          }.to raise_error(ArgumentError)
       end
     end
