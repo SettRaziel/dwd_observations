@@ -2,9 +2,10 @@
 # @Author: Benjamin Held
 # @Date:   2020-11-19 19:37:51
 # @Last Modified by:   Benjamin Held
-# @Last Modified time: 2020-11-21 18:52:44
+# @Last Modified time: 2020-11-22 15:50:09
 
 require "ruby_utils/statistic"
+require "ruby_utils/string"
 
 module DwdObservations
 
@@ -22,9 +23,10 @@ module DwdObservations
 
       # create the month statistic values for the given month
       # @param [Integer] month the integer representation of the given month
-      def create_month_statistic_for(month)
+      # @param [Symbol] measurand the measurand for which the data should be evaluated
+      def create_month_statistic_for(month, measurand)
         create_data(month)
-        generate_month_means
+        generate_month_means(measurand)
       end
 
       private
@@ -52,19 +54,22 @@ module DwdObservations
       end
 
       # method to create the monthly means for the given observation data
+      # @param [Symbol] measurand the measurand for which the data should be evaluated
       # @return [Hash] the hash holding the monthly mean for every year of the data set
       # for the requested month
-      def generate_month_means
+      def generate_month_means(measurand)
         means = Hash.new()
         @month_statistic.each_pair { |key, value|
           mean = 0
           value.each { |entry|
-            mean += entry.temperature
+            mean += entry.send(measurand)
           }
           mean = (mean / value.length).round(3)
           means[key] = mean
         }
         means
+      rescue NoMethodError
+        raise ArgumentError, "Error: Given measurand #{symbol} does not exist for this data.".red
       end
 
     end
