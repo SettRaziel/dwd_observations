@@ -2,13 +2,14 @@
 # @Author: Benjamin Held
 # @Date:   2020-11-26 20:22:56
 # @Last Modified by:   Benjamin Held
-# @Last Modified time: 2020-11-26 20:27:47
+# @Last Modified time: 2020-11-29 20:18:06
 
 require "ruby_utils/statistic"
 require "ruby_utils/string"
 
 module DwdObservations
 
+  # Module to hold the different statistical methods that can be applied to the observation data
   module Statistic
 
     # Statistic class that take a data repository with data and generates the mean for 
@@ -36,8 +37,7 @@ module DwdObservations
       # applied to it
       attr_reader :year_statistic
 
-      # method the extract the data from the observations for the given month
-      # @param [Integer] month the integer representation of the given month
+      # method the extract the data from the observations seperated by years
       def create_data
         @year_statistic = Hash.new()
         data_repository.repository.each { |entry|
