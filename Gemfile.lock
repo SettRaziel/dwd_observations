@@ -7,7 +7,7 @@ GIT
 PATH
   remote: .
   specs:
-    dwd_observations (0.0.1)
+    dwd_observations (0.1.0)
 
 GEM
   remote: https://rubygems.org/
