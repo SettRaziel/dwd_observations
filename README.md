@@ -1,4 +1,5 @@
 # DWD Oberservation data
+[![Maintainability](https://api.codeclimate.com/v1/badges/4f124ac156438083ae21/maintainability)](https://codeclimate.com/github/SettRaziel/dwd_observations/maintainability)
 
 This project holds a collection of ruby files that serves as an object mapper for the observation
 data from the german weather service (DWD). This repository will provide classes to represent the
