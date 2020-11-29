@@ -34,7 +34,10 @@ or data are marked and can have different license conditions.
 Please check the folders for subsidiary license files.
 
 The observation data from the german weather service is proteced. They can be used
-following the conditions found [here](https://opendata.dwd.de/climate_environment/CDC/Nutzungsbedingungen_German.pdf).
+following the conditions found [here](https://opendata.dwd.de/climate_environment/CDC/Nutzungsbedingungen_German.pdf) 
+(last checked: 2020-11-29). The test data of the project (found in [spec/files](./spec/files)) 
+uses a subsets of the observation data from the the german weather service. These data
+is used to validate the correct function of the code base.
 
 ## Roadmap
 * parsing scripts to read the data files and extract the necessary informations (done)
