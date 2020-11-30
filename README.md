@@ -1,7 +1,7 @@
 # DWD Oberservation data
-[![Build Status](https://travis-ci.org/SettRaziel/dwd_observations.svg?branch=master)](https://travis-ci.org/SettRaziel/dwd_observations)
+[![Build Status](https://travis-ci.org/SettRaziel/dwd_observations.svg?branch=development)](https://travis-ci.org/SettRaziel/dwd_observations)
 [![Maintainability](https://api.codeclimate.com/v1/badges/4f124ac156438083ae21/maintainability)](https://codeclimate.com/github/SettRaziel/dwd_observations/maintainability)
-[![Coverage Status](https://coveralls.io/repos/github/SettRaziel/dwd_observations/badge.svg?branch=master)](https://coveralls.io/github/SettRaziel/dwd_observations?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/SettRaziel/dwd_observations/badge.svg?branch=master)](https://coveralls.io/github/SettRaziel/dwd_observations?branch=development)
 
 This project holds a collection of ruby files that serves as an object mapper for the observation
 data from the german weather service (DWD). This repository will provide classes to represent the
