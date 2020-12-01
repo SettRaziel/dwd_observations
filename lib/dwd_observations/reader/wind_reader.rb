@@ -2,14 +2,16 @@
 # @Author: Benjamin Held
 # @Date:   2020-11-11 19:29:31
 # @Last Modified by:   Benjamin Held
-# @Last Modified time: 2020-11-11 19:34:43
+# @Last Modified time: 2020-12-01 20:02:17
 
 require "ruby_utils/parameter_converter"
 require "dwd_observations/data"
 
 module DwdObservations
 
-  # Child data reader class to read the observation data for the different measurands
+  # Child data reader class to read the observation data for:
+  # * wind speed in meter per second
+  # * wind direction in degree
   class WindReader < DataReader
 
     private

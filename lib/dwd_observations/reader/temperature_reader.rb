@@ -2,14 +2,16 @@
 # @Author: Benjamin Held
 # @Date:   2020-11-08 20:09:50
 # @Last Modified by:   Benjamin Held
-# @Last Modified time: 2020-11-09 21:52:10
+# @Last Modified time: 2020-12-01 20:01:24
 
 require "ruby_utils/parameter_converter"
 require "dwd_observations/data"
 
 module DwdObservations
 
-  # Child data reader class to read the observation data for the different measurands
+  # Child data reader class to read the observation data for:
+  # * the temperature in degree Celsius
+  # * the humidity in percent
   class TemperatureReader < DataReader
 
     private

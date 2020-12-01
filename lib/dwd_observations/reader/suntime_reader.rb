@@ -2,14 +2,14 @@
 # @Author: Benjamin Held
 # @Date:   2020-11-12 20:22:20
 # @Last Modified by:   Benjamin Held
-# @Last Modified time: 2020-11-12 20:28:52
+# @Last Modified time: 2020-12-01 20:00:24
 
 require "ruby_utils/parameter_converter"
 require "dwd_observations/data"
 
 module DwdObservations
 
-  # Child data reader class to read the observation data for the different measurands
+  # Child data reader class to read the observation data for the suntime in minutes per hour
   class SuntimeReader < DataReader
 
     private
