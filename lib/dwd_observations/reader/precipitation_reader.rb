@@ -2,7 +2,7 @@
 # @Author: Benjamin Held
 # @Date:   2020-11-09 18:46:52
 # @Last Modified by:   Benjamin Held
-# @Last Modified time: 2020-12-01 20:04:03
+# @Last Modified time: 2020-12-04 19:36:58
 
 require "ruby_utils/parameter_converter"
 require "dwd_observations/data"
@@ -11,7 +11,7 @@ module DwdObservations
 
   # Child data reader class to read the observation data for:
   # * rain amount in mm per hour
-  # * preciptation form {solid, liquid}
+  # * precipitation form {solid, liquid}
   class PrecipitationReader < DataReader
 
     private
