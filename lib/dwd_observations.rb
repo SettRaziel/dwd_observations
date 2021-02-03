@@ -2,15 +2,46 @@
 # @Author: Benjamin Held
 # @Date:   2020-11-06 17:14:14
 # @Last Modified by:   Benjamin Held
-# @Last Modified time: 2020-12-06 17:47:42
+# @Last Modified time: 2021-02-03 19:16:38
+
+require "dwd_observations/data"
+require "dwd_observations/meta_data"
+require "dwd_observations/parameter"
+require "dwd_observations/reader"
+require "dwd_observations/statistic"
 
 # main module
 module DwdObservations
 
-  require "dwd_observations/data"
-  require "dwd_observations/meta_data"
-  require "dwd_observations/parameter"
-  require "dwd_observations/reader"
-  require "dwd_observations/statistic"
+  # Dummy class to get access to the instance variables
+  class << self
+
+    # @return [Parameter::ParameterRepository] the handler controlling the parameters
+    attr_reader :parameter_repository
+
+    # main entry point and initialization
+    # @param [Array] arguments the input values from the terminal input ARGV
+    def initialize(arguments)
+      @parameter_repository = Parameter::ParameterRepository.new(arguments)
+    end
+
+  end
+
+  # call to print the help text
+  def self.print_help
+    if (@parameter_repository != nil && @parameter_repository.parameters[:help] != nil)
+      DwdObservations::HelpOutput.print_help_for(@parameter_repository.parameters[:help])
+    else
+      print_error("Error: Module not initialized. Run DwdObservations.new(ARGV)")
+    end
+    nil
+  end
+
+  # call to print version number and author
+  def self.print_version
+    puts "dwd_observations version 0.0.1".yellow
+    puts "Created by Benjamin Held (November 2020)".yellow
+    nil
+  end
 
 end
