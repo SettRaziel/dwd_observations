@@ -2,7 +2,7 @@
 # @Author: Benjamin Held
 # @Date:   2020-12-04 19:48:17
 # @Last Modified by:   Benjamin Held
-# @Last Modified time: 2020-12-04 19:55:45
+# @Last Modified time: 2021-02-14 11:43:06
 
 require "spec_helper"
 require "dwd_observations/parameter"
@@ -12,7 +12,7 @@ describe DwdObservations::Parameter::ParameterRepository do
   describe ".new" do
     context "given the one element measurand flag" do
       it "create the repository with the correct flags" do
-        arguments = ["-m", "temperature", "filename"]
+        arguments = ["-m", "temperature", "-f", "filename"]
         parameter_repository = DwdObservations::Parameter::ParameterRepository.new(arguments)
         expect(parameter_repository.parameters[:measurand]).to eq("temperature")
       end
@@ -22,7 +22,7 @@ describe DwdObservations::Parameter::ParameterRepository do
   describe ".new" do
     context "given the one element measurand flag" do
       it "create the repository with the correct flags" do
-        arguments = ["--measurand", "pressure", "filename"]
+        arguments = ["--measurand", "pressure", "--file", "filename"]
         parameter_repository = DwdObservations::Parameter::ParameterRepository.new(arguments)
         expect(parameter_repository.parameters[:measurand]).to eq("pressure")
       end
@@ -32,9 +32,20 @@ describe DwdObservations::Parameter::ParameterRepository do
   describe ".new" do
     context "given only the filename" do
       it "create the repository with the correct filename" do
-        arguments = ["filename"]
+        arguments = ["-f", "filename"]
         parameter_repository = DwdObservations::Parameter::ParameterRepository.new(arguments)
         expect(parameter_repository.parameters[:file]).to eq("filename")
+      end
+    end
+  end
+
+  describe ".new" do
+    context "given only the filename" do
+      it "create the repository with the correct filename" do
+        arguments = ["filename"]
+        expect {
+          DwdObservations::Parameter::ParameterRepository.new(arguments)
+        }.to raise_error(ArgumentError)
       end
     end
   end
@@ -53,7 +64,7 @@ describe DwdObservations::Parameter::ParameterRepository do
   describe ".new" do
     context "given an invalid parameter" do
       it "raise an argument error" do
-        arguments = ["test", "filename"]
+        arguments = ["test", "--file", "filename"]
         expect { 
           DwdObservations::Parameter::ParameterRepository.new(arguments)
         }.to raise_error(ArgumentError)
@@ -64,7 +75,7 @@ describe DwdObservations::Parameter::ParameterRepository do
   describe ".new" do
     context "given an invalid parameter" do
       it "raise an argument error" do
-        arguments = ["-1", "filename"]
+        arguments = ["-1"]
         expect { 
           DwdObservations::Parameter::ParameterRepository.new(arguments)
         }.to raise_error(ArgumentError)

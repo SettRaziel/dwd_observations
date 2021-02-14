@@ -2,7 +2,7 @@
 # @Author: Benjamin Held
 # @Date:   2021-02-03 19:05:50
 # @Last Modified by:   Benjamin Held
-# @Last Modified time: 2021-02-03 19:22:07
+# @Last Modified time: 2021-02-14 11:50:20
 
 require "spec_helper"
 require "dwd_observations"
@@ -22,6 +22,8 @@ describe DwdObservations do
                     "DWD observations help:".light_yellow + "\n" + \
                     " -h, --help     ".light_blue + "show help text\n" + \
                     " -v, --version  ".light_blue + "prints the current version of the project\n" + \
+                    " -f, --file     ".light_blue + "argument:".red + " <file>".yellow  + \
+                    "; optional parameter that indicates a filepath to a readable file\n" + \
                     " -m, --measurand".light_blue + "argument:".red + " <measurand>".yellow  + \
                     "; specifies the considered measurand value\n").to_stdout
       end
