@@ -1,9 +1,3 @@
-#!/usr/bin/ruby
-# @Author: Benjamin Held
-# @Date:   2020-11-08 20:12:21
-# @Last Modified by:   Benjamin Held
-# @Last Modified time: 2020-11-08 20:24:25
-
 require 'ruby_utils/file_reader'
 require "dwd_observations/meta_data"
 

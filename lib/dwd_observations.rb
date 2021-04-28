@@ -1,9 +1,3 @@
-#!/usr/bin/ruby
-# @Author: Benjamin Held
-# @Date:   2020-11-06 17:14:14
-# @Last Modified by:   Benjamin Held
-# @Last Modified time: 2021-02-03 19:16:38
-
 require "dwd_observations/data"
 require "dwd_observations/meta_data"
 require "dwd_observations/parameter"

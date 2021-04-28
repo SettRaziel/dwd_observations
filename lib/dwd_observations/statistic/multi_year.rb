@@ -1,9 +1,3 @@
-#!/usr/bin/ruby
-# @Author: Benjamin Held
-# @Date:   2020-11-27 21:47:45
-# @Last Modified by:   Benjamin Held
-# @Last Modified time: 2020-11-28 15:29:54
-
 require "ruby_utils/statistic"
 require "ruby_utils/string"
 

@@ -1,9 +1,3 @@
-#!/usr/bin/ruby
-# @Author: Benjamin Held
-# @Date:   2020-11-07 18:12:55
-# @Last Modified by:   Benjamin Held
-# @Last Modified time: 2020-11-13 21:56:19
-
 require "ruby_utils/meta_data"
 require "ruby_utils/parameter_converter"
 

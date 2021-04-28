@@ -1,8 +1,3 @@
-# @Author: Benjamin Held
-# @Date:   2019-05-07 10:03:48
-# @Last Modified by:   Benjamin Held
-# @Last Modified time: 2021-02-02 18:15:16
-
 require "ruby_utils/help_output"
 
 module DwdObservations

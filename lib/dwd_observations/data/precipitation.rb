@@ -1,8 +1,3 @@
-# @Author: Benjamin Held
-# @Date:   2018-06-02 13:05:59
-# @Last Modified by:   Benjamin Held
-# @Last Modified time: 2020-11-13 22:03:20
-
 module DwdObservations
 
   # Simple data class representing precipitation data

@@ -1,8 +1,3 @@
-# @Author: Benjamin Held
-# @Date:   2018-06-02 13:02:30
-# @Last Modified by:   Benjamin Held
-# @Last Modified time: 2020-11-13 22:04:22
-
 module DwdObservations
 
   # Simple data class representing wind data

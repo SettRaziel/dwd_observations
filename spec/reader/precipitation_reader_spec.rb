@@ -1,9 +1,3 @@
-#!/usr/bin/ruby
-# @Author: Benjamin Held
-# @Date:   2020-11-09 18:57:28
-# @Last Modified by:   Benjamin Held
-# @Last Modified time: 2020-11-09 19:00:21
-
 require "time"
 require "spec_helper"
 require "dwd_observations/reader"

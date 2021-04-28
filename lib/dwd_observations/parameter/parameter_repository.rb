@@ -1,9 +1,3 @@
-#!/usr/bin/ruby
-# @Author: Benjamin Held
-# @Date:   2020-12-04 19:39:07
-# @Last Modified by:   Benjamin Held
-# @Last Modified time: 2020-12-04 19:41:43
-
 module DwdObservations
 
   # Parent module which holds the classes dealing with reading and validating

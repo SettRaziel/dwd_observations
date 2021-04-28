@@ -1,9 +1,3 @@
-#!/usr/bin/ruby
-# @Author: Benjamin Held
-# @Date:   2020-11-07 18:00:04
-# @Last Modified by:   Benjamin Held
-# @Last Modified time: 2020-12-05 19:56:46
-
 require "ruby_utils/file_reader"
 require "ruby_utils/data_repository"
 require "ruby_utils/string"

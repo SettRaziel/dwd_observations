@@ -1,9 +1,3 @@
-#!/usr/bin/ruby
-# @Author: Benjamin Held
-# @Date:   2020-11-07 18:36:52
-# @Last Modified by:   Benjamin Held
-# @Last Modified time: 2020-11-07 19:09:49
-
 require "spec_helper"
 require "dwd_observations/meta_data"
 

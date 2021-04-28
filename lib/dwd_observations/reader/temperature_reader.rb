@@ -1,9 +1,3 @@
-#!/usr/bin/ruby
-# @Author: Benjamin Held
-# @Date:   2020-11-08 20:09:50
-# @Last Modified by:   Benjamin Held
-# @Last Modified time: 2020-12-01 20:01:24
-
 require "ruby_utils/parameter_converter"
 require "dwd_observations/data"
 
