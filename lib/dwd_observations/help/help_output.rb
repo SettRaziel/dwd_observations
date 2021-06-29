@@ -3,12 +3,12 @@
 # @Last Modified by:   Benjamin Held
 # @Last Modified time: 2021-02-02 18:15:16
 
-require "ruby_utils/help_output"
+require "ruby_utils/base_help_output"
 
 module DwdObservations
 
   # Output class for help text
-  class HelpOutput < RubyUtils::BasicHelpOutput
+  class HelpOutput < RubyUtils::BaseHelpOutput
 
     private
 
