@@ -14,7 +14,7 @@ module DwdObservations
 
     # method to specify and add the help entries with help text and one argument
     def self.add_one_argument_help_entries
-      add_single_argument_text(:measurand, " -m, --measurand", " <measurand>",
+      add_single_argument_text(:measurand, " -m, --measurand ", " <measurand>",
             "; specifies the considered measurand value")
       nil
     end
