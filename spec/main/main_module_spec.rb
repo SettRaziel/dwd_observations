@@ -14,11 +14,11 @@ describe DwdObservations do
                     "help usage :".green + "              ruby <script> (-h | --help)\n" + \
                     "help usage for parameter:".green + " ruby <script> <parameter> (-h | --help)\n" + \
                     "DWD observations help:".light_yellow + "\n" + \
-                    " -h, --help     ".light_blue + "show help text\n" + \
-                    " -v, --version  ".light_blue + "prints the current version of the project\n" + \
-                    " -f, --file     ".light_blue + "argument:".red + " <file>".yellow  + \
+                    " -h, --help      ".light_blue + "show help text\n" + \
+                    " -v, --version   ".light_blue + "prints the current version of the project\n" + \
+                    " -f, --file      ".light_blue + "argument:".red + " <file>".yellow  + \
                     "; optional parameter that indicates a filepath to a readable file\n" + \
-                    " -m, --measurand".light_blue + "argument:".red + " <measurand>".yellow  + \
+                    " -m, --measurand ".light_blue + "argument:".red + " <measurand>".yellow  + \
                     "; specifies the considered measurand value\n").to_stdout
       end
     end
@@ -32,7 +32,7 @@ describe DwdObservations do
           DwdObservations.initialize(arguments)
           DwdObservations.print_help
         }.to output("DWD observations help:".light_yellow + "\n" + \
-                    " -m, --measurand".light_blue + "argument:".red + " <measurand>".yellow  + \
+                    " -m, --measurand ".light_blue + "argument:".red + " <measurand>".yellow  + \
                     "; specifies the considered measurand value\n").to_stdout
       end
     end

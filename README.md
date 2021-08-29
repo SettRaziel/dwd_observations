@@ -16,9 +16,9 @@ script usage: ruby <script> [parameters] <filename>
 help usage :              ruby <script> (-h | --help)
 help usage for parameter: ruby <script> <parameter> (-h | --help)
 DWD observations help:
- -h, --help     show help text
- -v, --version  prints the current version of the project
- -m, --measurandargument: <measurand>; specifies the considered measurand value
+ -h, --help      show help text
+ -v, --version   prints the current version of the project
+ -m, --measurand argument: <measurand>; specifies the considered measurand value
 ```
 
 ## Documentation
