@@ -10,3 +10,4 @@ coverage/
 
 # exclude gem informations
 *.gem
+Gemfile.lock
