@@ -8,8 +8,7 @@ describe DwdObservations::PrecipitationReader do
     context "given a text file with oberservation data" do
       it "reads the data and stores them in the data repository" do
         reader = DwdObservations::PrecipitationReader.new(
-                 File.join(__dir__,"../files/precip_hourly_00433.txt"),
-                 File.join(__dir__,"../files/meta_data_00433.txt"))
+                 File.join(__dir__,"../files/precip_hourly_00433.txt"), META_DATA.to_path)
         precipitation = reader.data_repository.repository[8]
         expect(precipitation.station_id).to eq(433)  
         expect(precipitation.timestamp).to eq(Time.parse("2020103008"))

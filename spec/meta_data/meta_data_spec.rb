@@ -6,9 +6,9 @@ describe DwdObservations::MetaData do
   describe ".new" do
     context "given an array with the header information" do
       it "create meta data and have the correct station id" do
-        header = ["   2014","Hannover                                ","18560101"]
+        header = ["   433", "   48.00", " 52.4675", " 13.4021", "20180531", "        "," Berlin-Tempelhof"]
         meta_data = DwdObservations::MetaData.new(header)
-        expect(meta_data.station_id).to eq(2014)
+        expect(meta_data.station.descriptor).to eq(433)
       end
     end
   end
@@ -16,9 +16,9 @@ describe DwdObservations::MetaData do
   describe ".new" do
     context "given an array with the header information" do
       it "create meta data and have the correct station name" do
-        header = ["   2014","Hannover                                ","18560101"]
+        header = ["   433", "   48.00", " 52.4675", " 13.4021", "20180531", "        "," Berlin-Tempelhof"]
         meta_data = DwdObservations::MetaData.new(header)
-        expect(meta_data.station_name).to eq("Hannover")
+        expect(meta_data.station.name).to eq("Berlin-Tempelhof")
       end
     end
   end
@@ -26,9 +26,9 @@ describe DwdObservations::MetaData do
   describe ".new" do
     context "given an array with the header information" do
       it "create meta data and have the correct station name" do
-        header = ["   2014","Hannover                                ","18560101"]
+        header = ["   433", "   48.00", " 52.4675", " 13.4021", "20180531", "        "," Berlin-Tempelhof"]
         meta_data = DwdObservations::MetaData.new(header)
-        expect(meta_data.start_date).to eq(Time.parse("18560101"))
+        expect(meta_data.start_date).to eq(Time.parse("20180531"))
       end
     end
   end

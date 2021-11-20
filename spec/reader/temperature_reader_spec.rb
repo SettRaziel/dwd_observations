@@ -8,8 +8,7 @@ describe DwdObservations::TemperatureReader do
     context "given a text file with oberservation data" do
       it "reads the data and stores them in the data repository" do
         reader = DwdObservations::TemperatureReader.new(
-                 File.join(__dir__,"../files/temp_hourly_00433.txt"),
-                 File.join(__dir__,"../files/meta_data_00433.txt"))
+                 File.join(__dir__,"../files/temp_hourly_00433.txt"), META_DATA.to_path)
         temperature = reader.data_repository.repository[26]
         expect(temperature.station_id).to eq(433)  
         expect(temperature.timestamp).to eq(Time.parse("2020100314"))
