@@ -28,7 +28,7 @@ describe DwdObservations::MetaReader do
       it "reads the meta data and creates the meta data" do
         meta_reader = DwdObservations::MetaReader.new(META_DATA.to_path)
         meta_data = meta_reader.meta_data
-        expect(meta_data.start_date).to eq(Time.parse("20180531"))
+        expect(meta_data.start_date).to eq(Time.parse("19280101"))
       end
     end
   end

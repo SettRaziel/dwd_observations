@@ -10,14 +10,17 @@ module DwdObservations
     # @return [DwdObservations::Entity::Station] the corresponding grid point
     attr_reader :station
 
-    # @return [Time] the start date and time of the data series
+    # @return [Time] the start date of the first data measurement at this station
     attr_reader :start_date
 
     # initialization
-    # @param [Array] header_line the head line of a data set holding the 
-    # relevant meta information
-    def initialize(header_line)
+    # @param [Array] header_line the head line of a data set holding the relevant meta information
+    # @param [String] start_date the start date for the first data value of the station 
+    def initialize(header_line, start_date=nil)
       super(header_line)
+      if (start_date != nil)
+        @start_date = RubyUtils::ParameterConverter.convert_time_parameter(start_date)
+      end
     end
 
     private
