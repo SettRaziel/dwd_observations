@@ -13,8 +13,8 @@ module DwdObservations
     # @param [String] data_path the path to the meta data of the station
     def initialize(data_path)
       data = RubyUtils::FileReader.new(data_path, ";").data
-      # since the fist line is the column description the second line holds the meta data
-      @meta_data = MetaData.new(data[1])
+      # since the last line holds the latest meta information for the station use these
+      @meta_data = MetaData.new(data.last, data[1][4])
     end
 
   end

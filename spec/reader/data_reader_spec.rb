@@ -7,8 +7,8 @@ describe DwdObservations::DataReader do
     context "given a text file with oberservation data" do
       it "reads the data and fails with an error for the abstract method" do
         expect { 
-          DwdObservations::DataReader.new(File.join(__dir__,"../files/temp_hourly_00433.txt"),
-                                          File.join(__dir__,"../files/meta_data_00433.txt"))
+          DwdObservations::DataReader.new(File.join(__dir__,"../files/temp_hourly_00433.txt"), 
+                                          META_DATA.to_path)
         }.to raise_error(NotImplementedError)
       end
     end

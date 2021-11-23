@@ -20,6 +20,9 @@ begin
   SimpleCov.start
 rescue LoadError; end
 
+DATA_ROOT = Pathname.new(__dir__).join("files/").expand_path
+META_DATA = DATA_ROOT.join("Metadaten_Geographie_00433.txt")
+
 require "rspec"
 require "dwd_observations"
 

@@ -7,8 +7,7 @@ describe DwdObservations::Reader do
     context "given input data and a measurand precipitation" do
       it "reads the data and for the given measurand" do
         reader = DwdObservations::Reader.determine_reader_for("precipitation",
-                                File.join(__dir__,"../files/precip_hourly_00433.txt"),
-                                File.join(__dir__,"../files/meta_data_00433.txt"))
+                                File.join(__dir__,"../files/precip_hourly_00433.txt"), META_DATA.to_path)
         expect(reader).to be_a_kind_of(DwdObservations::PrecipitationReader) 
       end
     end
@@ -18,8 +17,7 @@ describe DwdObservations::Reader do
     context "given input data and a measurand pressure" do
       it "reads the data and for the given measurand" do
         reader = DwdObservations::Reader.determine_reader_for("pressure",
-                                File.join(__dir__,"../files/pressure_hourly_00433.txt"),
-                                File.join(__dir__,"../files/meta_data_00433.txt"))
+                                File.join(__dir__,"../files/pressure_hourly_00433.txt"), META_DATA.to_path)
         expect(reader).to be_a_kind_of(DwdObservations::PressureReader) 
       end
     end
@@ -29,8 +27,7 @@ describe DwdObservations::Reader do
     context "given input data and a measurand suntime" do
       it "reads the data and for the given measurand" do
         reader = DwdObservations::Reader.determine_reader_for("suntime",
-                                File.join(__dir__,"../files/suntime_hourly_00433.txt"),
-                                File.join(__dir__,"../files/meta_data_00433.txt"))
+                                File.join(__dir__,"../files/suntime_hourly_00433.txt"), META_DATA.to_path)
         expect(reader).to be_a_kind_of(DwdObservations::SuntimeReader) 
       end
     end
@@ -40,8 +37,7 @@ describe DwdObservations::Reader do
     context "given input data and a measurand temperature" do
       it "reads the data and for the given measurand" do
         reader = DwdObservations::Reader.determine_reader_for("temperature",
-                                File.join(__dir__,"../files/temp_hourly_00433.txt"),
-                                File.join(__dir__,"../files/meta_data_00433.txt"))
+                                File.join(__dir__,"../files/temp_hourly_00433.txt"), META_DATA.to_path)
         expect(reader).to be_a_kind_of(DwdObservations::TemperatureReader) 
       end
     end
@@ -51,8 +47,7 @@ describe DwdObservations::Reader do
     context "given input data and a measurand wind" do
       it "reads the data and for the given measurand" do
         reader = DwdObservations::Reader.determine_reader_for("wind",
-                                File.join(__dir__,"../files/wind_hourly_00433.txt"),
-                                File.join(__dir__,"../files/meta_data_00433.txt"))
+                                File.join(__dir__,"../files/wind_hourly_00433.txt"), META_DATA.to_path)
         expect(reader).to be_a_kind_of(DwdObservations::WindReader) 
       end
     end
@@ -63,8 +58,7 @@ describe DwdObservations::Reader do
       it "reads the measurand and returns an error" do
         expect {
           DwdObservations::Reader.determine_reader_for("for",
-                                File.join(__dir__,"../files/wind_hourly_00433.txt"),
-                                File.join(__dir__,"../files/meta_data_00433.txt"))
+                                File.join(__dir__,"../files/wind_hourly_00433.txt"), META_DATA.to_path)
         }.to raise_error(ArgumentError)
       end
     end
