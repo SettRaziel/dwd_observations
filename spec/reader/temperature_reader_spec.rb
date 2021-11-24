@@ -19,4 +19,15 @@ describe DwdObservations::TemperatureReader do
     end
   end
 
+  describe ".new" do
+    context "given a text file with oberservation data" do
+      it "reads the data and stores the correct time period for the data" do
+        reader = DwdObservations::TemperatureReader.new(
+                 File.join(__dir__,"../files/temp_hourly_00433.txt"), META_DATA.to_path)
+        expect(reader.time_period.start_time).to eq(Time.parse("2020100212")) 
+        expect(reader.time_period.end_time).to eq(Time.parse("2020100423")) 
+      end
+    end
+  end
+
 end
