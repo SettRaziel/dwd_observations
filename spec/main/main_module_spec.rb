@@ -18,6 +18,8 @@ describe DwdObservations do
                     " -v, --version   ".light_blue + "prints the current version of the project\n" + \
                     " -f, --file      ".light_blue + "argument:".red + " <file>".yellow  + \
                     "; optional parameter that indicates a filepath to a readable file\n" + \
+                    " -j, --json      ".light_blue + \
+                    "exports the observation values as a json object\n" + \
                     " -m, --measurand ".light_blue + "argument:".red + " <measurand>".yellow  + \
                     "; specifies the considered measurand value\n").to_stdout
       end

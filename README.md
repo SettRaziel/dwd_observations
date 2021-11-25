@@ -18,6 +18,7 @@ help usage for parameter: ruby <script> <parameter> (-h | --help)
 DWD observations help:
  -h, --help      show help text
  -v, --version   prints the current version of the project
+ -j, --json      exports the observation values as a json object
  -m, --measurand argument: <measurand>; specifies the considered measurand value
 ```
 
