@@ -7,10 +7,10 @@ module DwdObservations
   # predefined json format.
   module JsonConverter
 
-    # Abstract parent class for the json converter to convert preread weather data
+    # Class for the json converter to convert preread weather observation data
     # into the specified output format. The metadata is identical for all
-    # child classes, the weather values can depend on the different attributes.
-    class BaseConverter
+    # measurands, the weather values can depend on the different attributes.
+    class MeasurandConverter
 
       # initialization
       # @param [DataRepository] repository the prefilled repository
@@ -65,14 +65,28 @@ module DwdObservations
         return station_hash
       end
 
-      # abstract method which adds the weather data to the weather key that will
+      # method which adds the weather data to the weather key that will
       # be converted into json via a Hash. If this method implements faulty
       # Hashes the json conversion will fail.
-      # @raise [NotImplementedError] if the child class does not implement this
-      # method
+      # @return [Array] the Array with the observation data hashes
       def generate_data_values
-        fail NotImplementedError, " Error: the subclass #{self.class} needs " \
-             "to implement the method: generate_data_values from its base class".red
+        data_array = Array.new()
+        @data.repository.each { |dataset|
+          data_array << create_data_hash(dataset)
+        }
+        return data_array
+      end
+
+      # method to create a valid json hash for a given data entry as 
+      # pair {instance_variable, value}
+      # @param [DwdObservations::Data] dataset the specific child class of data for the measurand
+      # @return [Hash] the key-value hashes for the json output     
+      def create_data_hash(dataset)
+        data_entries = Hash.new()
+        dataset.instance_variables.map{ |ivar| 
+          data_entries[ivar.to_s.tr("@", "")] = dataset.instance_variable_get(ivar)
+        }
+        return data_entries
       end
 
     end
