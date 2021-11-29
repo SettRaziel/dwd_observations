@@ -48,6 +48,7 @@ module DwdObservations
         meta_hash = Hash.new()
         meta_hash[:station] = generate_station_hash(@data.meta_data.station)
         meta_hash[:start_date] = @data.meta_data.start_date
+        meta_hash[:measurand] = @data.meta_data.measurand
         return meta_hash
       end
 

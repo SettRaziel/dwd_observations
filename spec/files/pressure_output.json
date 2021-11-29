@@ -9,7 +9,8 @@
         "y": 52.4675
       }
     },
-    "start_date": "1928-01-01 00:00:00 +0100"
+    "start_date": "1928-01-01 00:00:00 +0100",
+    "measurand": "Pressure"
   },
   "weather_data": [
     {
