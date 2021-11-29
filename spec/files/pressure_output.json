@@ -1,0 +1,436 @@
+{
+  "meta_data": {
+    "station": {
+      "name": "Berlin-Tempelhof",
+      "descriptor": 433,
+      "elevation": 48.0,
+      "coordinate": {
+        "x": 13.4021,
+        "y": 52.4675
+      }
+    },
+    "start_date": "1928-01-01 00:00:00 +0100"
+  },
+  "weather_data": [
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-02 12:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 1001.9,
+      "station_pressure": 996.2
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-02 13:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 1001.5,
+      "station_pressure": 995.8
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-02 14:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 1001.4,
+      "station_pressure": 995.7
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-02 15:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 1001.1,
+      "station_pressure": 995.4
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-02 16:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 1000.8,
+      "station_pressure": 995.1
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-02 17:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 1001.1,
+      "station_pressure": 995.3
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-02 18:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 1000.8,
+      "station_pressure": 995.0
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-02 19:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 1000.6,
+      "station_pressure": 994.8
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-02 20:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 1000.2,
+      "station_pressure": 994.4
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-02 21:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 1000.0,
+      "station_pressure": 994.2
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-02 22:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 999.4,
+      "station_pressure": 993.6
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-02 23:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 998.9,
+      "station_pressure": 993.1
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-03 00:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 998.4,
+      "station_pressure": 992.6
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-03 01:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 998.1,
+      "station_pressure": 992.3
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-03 02:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 997.6,
+      "station_pressure": 991.8
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-03 03:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 996.8,
+      "station_pressure": 991.0
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-03 04:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 996.6,
+      "station_pressure": 990.8
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-03 05:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 995.9,
+      "station_pressure": 990.1
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-03 06:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 995.7,
+      "station_pressure": 989.9
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-03 07:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 994.9,
+      "station_pressure": 989.2
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-03 08:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 995.2,
+      "station_pressure": 989.5
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-03 09:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 995.0,
+      "station_pressure": 989.3
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-03 10:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 994.0,
+      "station_pressure": 988.4
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-03 11:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 993.2,
+      "station_pressure": 987.6
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-03 12:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 993.1,
+      "station_pressure": 987.5
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-03 13:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 993.0,
+      "station_pressure": 987.4
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-03 14:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 992.4,
+      "station_pressure": 986.8
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-03 15:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 992.3,
+      "station_pressure": 986.7
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-03 16:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 991.8,
+      "station_pressure": 986.2
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-03 17:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 992.3,
+      "station_pressure": 986.7
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-03 18:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 992.5,
+      "station_pressure": 986.9
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-03 19:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 992.7,
+      "station_pressure": 987.0
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-03 20:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 992.7,
+      "station_pressure": 987.0
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-03 21:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 992.6,
+      "station_pressure": 986.9
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-03 22:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 993.7,
+      "station_pressure": 988.0
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-03 23:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 993.9,
+      "station_pressure": 988.2
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-04 00:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 994.7,
+      "station_pressure": 989.0
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-04 01:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 994.0,
+      "station_pressure": 988.3
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-04 02:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 993.6,
+      "station_pressure": 987.9
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-04 03:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 993.6,
+      "station_pressure": 987.8
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-04 04:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 994.2,
+      "station_pressure": 988.4
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-04 05:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 994.6,
+      "station_pressure": 988.8
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-04 06:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 995.5,
+      "station_pressure": 989.7
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-04 07:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 996.2,
+      "station_pressure": 990.4
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-04 08:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 996.8,
+      "station_pressure": 991.0
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-04 09:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 997.2,
+      "station_pressure": 991.5
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-04 10:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 997.2,
+      "station_pressure": 991.5
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-04 11:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 997.6,
+      "station_pressure": 991.9
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-04 12:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 997.9,
+      "station_pressure": 992.2
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-04 13:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 998.9,
+      "station_pressure": 993.2
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-04 14:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 1000.0,
+      "station_pressure": 994.3
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-04 15:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 1001.0,
+      "station_pressure": 995.3
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-04 16:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 1001.9,
+      "station_pressure": 996.2
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-04 17:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 1003.3,
+      "station_pressure": 997.5
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-04 18:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 1003.8,
+      "station_pressure": 998.0
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-04 19:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 1004.2,
+      "station_pressure": 998.4
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-04 20:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 1004.4,
+      "station_pressure": 998.6
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-04 21:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 1004.8,
+      "station_pressure": 998.9
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-04 22:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 1005.2,
+      "station_pressure": 999.3
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-04 23:00:00 +0200",
+      "quality_level": 1,
+      "reduced_pressure": 1005.2,
+      "station_pressure": 999.3
+    }
+  ]
+}
