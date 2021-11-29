@@ -8,6 +8,13 @@ module DwdObservations
   # * the humidity in percent
   class TemperatureReader < DataReader
 
+    # initialization
+    # @param [String] data_path the path to the observation data
+    # @param [String] meta_path the path to the meta data
+    def initialize(data_path, meta_path)
+      super(data_path, meta_path, "Temperature")
+    end
+
     private
 
     # method to create the measurand data from the input data   

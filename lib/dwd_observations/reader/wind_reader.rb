@@ -8,6 +8,13 @@ module DwdObservations
   # * wind direction in degree
   class WindReader < DataReader
 
+    # initialization
+    # @param [String] data_path the path to the observation data
+    # @param [String] meta_path the path to the meta data
+    def initialize(data_path, meta_path)
+      super(data_path, meta_path, "Wind")
+    end
+
     private
 
     # method to create the measurand data from the input data   
