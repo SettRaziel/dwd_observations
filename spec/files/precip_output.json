@@ -1,0 +1,400 @@
+{
+  "meta_data": {
+    "station": {
+      "name": "Berlin-Tempelhof",
+      "descriptor": 433,
+      "elevation": 48.0,
+      "coordinate": {
+        "x": 13.4021,
+        "y": 52.4675
+      }
+    },
+    "start_date": "1928-01-01 00:00:00 +0100"
+  },
+  "weather_data": [
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-30 00:00:00 +0100",
+      "quality_level": 1,
+      "amount": 0.0,
+      "rain_indicator": 0,
+      "precipitation_form": -999
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-30 01:00:00 +0100",
+      "quality_level": 1,
+      "amount": 0.0,
+      "rain_indicator": 0,
+      "precipitation_form": -999
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-30 02:00:00 +0100",
+      "quality_level": 1,
+      "amount": 0.1,
+      "rain_indicator": 1,
+      "precipitation_form": -999
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-30 03:00:00 +0100",
+      "quality_level": 1,
+      "amount": 0.3,
+      "rain_indicator": 1,
+      "precipitation_form": -999
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-30 04:00:00 +0100",
+      "quality_level": 1,
+      "amount": 0.4,
+      "rain_indicator": 1,
+      "precipitation_form": -999
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-30 05:00:00 +0100",
+      "quality_level": 1,
+      "amount": 0.6,
+      "rain_indicator": 1,
+      "precipitation_form": -999
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-30 06:00:00 +0100",
+      "quality_level": 1,
+      "amount": 0.3,
+      "rain_indicator": 1,
+      "precipitation_form": -999
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-30 07:00:00 +0100",
+      "quality_level": 1,
+      "amount": 1.2,
+      "rain_indicator": 1,
+      "precipitation_form": -999
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-30 08:00:00 +0100",
+      "quality_level": 1,
+      "amount": 1.9,
+      "rain_indicator": 1,
+      "precipitation_form": -999
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-30 09:00:00 +0100",
+      "quality_level": 1,
+      "amount": 1.2,
+      "rain_indicator": 1,
+      "precipitation_form": -999
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-30 10:00:00 +0100",
+      "quality_level": 1,
+      "amount": 1.0,
+      "rain_indicator": 1,
+      "precipitation_form": -999
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-30 11:00:00 +0100",
+      "quality_level": 1,
+      "amount": 0.4,
+      "rain_indicator": 1,
+      "precipitation_form": -999
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-30 12:00:00 +0100",
+      "quality_level": 1,
+      "amount": 1.4,
+      "rain_indicator": 1,
+      "precipitation_form": -999
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-30 13:00:00 +0100",
+      "quality_level": 1,
+      "amount": 1.6,
+      "rain_indicator": 1,
+      "precipitation_form": -999
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-30 14:00:00 +0100",
+      "quality_level": 1,
+      "amount": 0.9,
+      "rain_indicator": 1,
+      "precipitation_form": -999
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-30 15:00:00 +0100",
+      "quality_level": 1,
+      "amount": 0.7,
+      "rain_indicator": 1,
+      "precipitation_form": -999
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-30 16:00:00 +0100",
+      "quality_level": 1,
+      "amount": 0.2,
+      "rain_indicator": 1,
+      "precipitation_form": -999
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-30 17:00:00 +0100",
+      "quality_level": 1,
+      "amount": 0.0,
+      "rain_indicator": 1,
+      "precipitation_form": -999
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-30 18:00:00 +0100",
+      "quality_level": 1,
+      "amount": 0.2,
+      "rain_indicator": 1,
+      "precipitation_form": -999
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-30 19:00:00 +0100",
+      "quality_level": 1,
+      "amount": 0.9,
+      "rain_indicator": 1,
+      "precipitation_form": -999
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-30 20:00:00 +0100",
+      "quality_level": 1,
+      "amount": 0.3,
+      "rain_indicator": 1,
+      "precipitation_form": -999
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-30 21:00:00 +0100",
+      "quality_level": 1,
+      "amount": 0.0,
+      "rain_indicator": 1,
+      "precipitation_form": -999
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-30 22:00:00 +0100",
+      "quality_level": 1,
+      "amount": 0.0,
+      "rain_indicator": 1,
+      "precipitation_form": -999
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-30 23:00:00 +0100",
+      "quality_level": 1,
+      "amount": 0.0,
+      "rain_indicator": 1,
+      "precipitation_form": -999
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-31 00:00:00 +0100",
+      "quality_level": 1,
+      "amount": 0.3,
+      "rain_indicator": 1,
+      "precipitation_form": -999
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-31 01:00:00 +0100",
+      "quality_level": 1,
+      "amount": 0.7,
+      "rain_indicator": 1,
+      "precipitation_form": -999
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-31 02:00:00 +0100",
+      "quality_level": 1,
+      "amount": 1.0,
+      "rain_indicator": 1,
+      "precipitation_form": -999
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-31 03:00:00 +0100",
+      "quality_level": 1,
+      "amount": 0.4,
+      "rain_indicator": 1,
+      "precipitation_form": -999
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-31 04:00:00 +0100",
+      "quality_level": 1,
+      "amount": 0.0,
+      "rain_indicator": 1,
+      "precipitation_form": -999
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-31 05:00:00 +0100",
+      "quality_level": 1,
+      "amount": 0.0,
+      "rain_indicator": 1,
+      "precipitation_form": -999
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-31 06:00:00 +0100",
+      "quality_level": 1,
+      "amount": 0.3,
+      "rain_indicator": 1,
+      "precipitation_form": -999
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-31 07:00:00 +0100",
+      "quality_level": 1,
+      "amount": 0.3,
+      "rain_indicator": 1,
+      "precipitation_form": -999
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-31 08:00:00 +0100",
+      "quality_level": 1,
+      "amount": 0.4,
+      "rain_indicator": 1,
+      "precipitation_form": -999
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-31 09:00:00 +0100",
+      "quality_level": 1,
+      "amount": 0.3,
+      "rain_indicator": 1,
+      "precipitation_form": -999
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-31 10:00:00 +0100",
+      "quality_level": 1,
+      "amount": 0.1,
+      "rain_indicator": 1,
+      "precipitation_form": -999
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-31 11:00:00 +0100",
+      "quality_level": 1,
+      "amount": 0.0,
+      "rain_indicator": 1,
+      "precipitation_form": -999
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-31 12:00:00 +0100",
+      "quality_level": 1,
+      "amount": 0.0,
+      "rain_indicator": 0,
+      "precipitation_form": -999
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-31 13:00:00 +0100",
+      "quality_level": 1,
+      "amount": 0.0,
+      "rain_indicator": 0,
+      "precipitation_form": -999
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-31 14:00:00 +0100",
+      "quality_level": 1,
+      "amount": 0.0,
+      "rain_indicator": 0,
+      "precipitation_form": -999
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-31 15:00:00 +0100",
+      "quality_level": 1,
+      "amount": 0.0,
+      "rain_indicator": 1,
+      "precipitation_form": -999
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-31 16:00:00 +0100",
+      "quality_level": 1,
+      "amount": 0.0,
+      "rain_indicator": 0,
+      "precipitation_form": -999
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-31 17:00:00 +0100",
+      "quality_level": 1,
+      "amount": 0.0,
+      "rain_indicator": 0,
+      "precipitation_form": -999
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-31 18:00:00 +0100",
+      "quality_level": 1,
+      "amount": 0.0,
+      "rain_indicator": 1,
+      "precipitation_form": -999
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-31 19:00:00 +0100",
+      "quality_level": 1,
+      "amount": 0.0,
+      "rain_indicator": 0,
+      "precipitation_form": -999
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-31 20:00:00 +0100",
+      "quality_level": 1,
+      "amount": 0.0,
+      "rain_indicator": 0,
+      "precipitation_form": -999
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-31 21:00:00 +0100",
+      "quality_level": 1,
+      "amount": 0.0,
+      "rain_indicator": 0,
+      "precipitation_form": -999
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-31 22:00:00 +0100",
+      "quality_level": 1,
+      "amount": 0.0,
+      "rain_indicator": 0,
+      "precipitation_form": -999
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-31 23:00:00 +0100",
+      "quality_level": 1,
+      "amount": 0.0,
+      "rain_indicator": 0,
+      "precipitation_form": -999
+    }
+  ]
+}
