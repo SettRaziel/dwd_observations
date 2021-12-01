@@ -3,6 +3,7 @@ require "dwd_observations/meta_data"
 require "dwd_observations/parameter"
 require "dwd_observations/reader"
 require "dwd_observations/statistic"
+require "dwd_observations/help/help_output"
 
 # main module
 module DwdObservations
@@ -35,6 +36,15 @@ module DwdObservations
   def self.print_version
     puts "dwd_observations version 0.0.1".yellow
     puts "Created by Benjamin Held (November 2020)".yellow
+    nil
+  end
+
+
+  # call for standard error output
+  # @param [String] message message string with error message
+  def self.print_error(message)
+    puts "#{message}".red
+    puts "For help type: ruby <script> --help".green
     nil
   end
 
