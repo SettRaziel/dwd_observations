@@ -10,7 +10,7 @@ begin
   elsif (parameter_repository.parameters[:version])
     DwdObservations.print_version
   else
-    puts DwdObservations.output_forecast
+    DwdObservations.handle_parameters
   end
 
 rescue StandardError, NotImplementedError => e
