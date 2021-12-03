@@ -20,6 +20,9 @@ begin
   SimpleCov.start
 rescue LoadError; end
 
+# Define required time zone for forecast timestamp
+ENV["TZ"] = "Europe/Berlin"
+
 DATA_ROOT = Pathname.new(__dir__).join("files/").expand_path
 META_DATA = DATA_ROOT.join("Metadaten_Geographie.txt")
 
