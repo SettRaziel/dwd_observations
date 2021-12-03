@@ -22,6 +22,15 @@ module DwdObservations
     # @param [Array] arguments the input values from the terminal input ARGV
     def initialize(arguments)
       @parameter_repository = Parameter::ParameterRepository.new(arguments)
+      if (!@parameter_repository.parameters[:help] && !@parameter_repository.parameters[:version])
+        initialize_data
+      end
+    end
+
+    private
+
+    # method to read the data for the given measurand
+    def initialize_data
       measurand = @parameter_repository.parameters[:measurand]
       if (measurand == nil)
         print_error("Missing parameter --measurand, dont have data to work with.")
