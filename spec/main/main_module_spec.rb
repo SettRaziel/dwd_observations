@@ -18,6 +18,8 @@ describe DwdObservations do
                     " -v, --version   ".light_blue + "prints the current version of the project\n" + \
                     " -f, --file      ".light_blue + "argument:".red + " <file>".yellow  + \
                     "; optional parameter that indicates a filepath to a readable file\n" + \
+                    " -j, --json      ".light_blue + \
+                    "exports the observation values as a json object\n" + \
                     " -m, --measurand ".light_blue + "argument:".red + " <measurand>".yellow  + \
                     "; specifies the considered measurand value\n").to_stdout
       end
@@ -28,12 +30,39 @@ describe DwdObservations do
     context "given an array of parameters without help parameter" do
       it "print the error" do
         expect { 
-          arguments = ["-m", "-h", File.join(__dir__,"../files/wind_hourly_00433.txt")]
+          arguments = ["-m", "-h"]
           DwdObservations.initialize(arguments)
           DwdObservations.print_help
         }.to output("DWD observations help:".light_yellow + "\n" + \
                     " -m, --measurand ".light_blue + "argument:".red + " <measurand>".yellow  + \
                     "; specifies the considered measurand value\n").to_stdout
+      end
+    end
+  end
+
+  describe "#print_help_for" do
+    context "given an array of parameters without help parameter" do
+      it "print the correct help output" do
+        expect { 
+          arguments = ["-j", "-f", File.join(DATA_ROOT, "../files/wind_hourly_00433.txt")]
+          DwdObservations.initialize(arguments)
+        }.to output("Missing parameter --measurand, dont have data to work with.".red + "\n" +\
+          "For help type: ruby <script> --help".green + "\n").to_stdout
+      end
+    end
+  end
+
+  describe "#handle_parameters" do
+    context "given an array of parameters without help parameter" do
+      it "reads the data and generate the json output" do
+        arguments = ["-m", "wind", "-j", "-f", File.join(DATA_ROOT, "../files/wind_hourly_00433.txt")]
+        DwdObservations.initialize(arguments)
+        DwdObservations.handle_parameters
+
+        expect(FileUtils.compare_file(File.join(DATA_ROOT,"output.json"), File.join(DATA_ROOT,"wind_output.json"))).to be_truthy
+
+        # clean up data from the test and catch errors since they should not let the test fail
+        File.delete(File.join(DATA_ROOT,"output.json"))
       end
     end
   end

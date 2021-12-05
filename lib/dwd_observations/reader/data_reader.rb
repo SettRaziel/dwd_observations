@@ -16,8 +16,9 @@ module DwdObservations
     # initialization
     # @param [String] data_path the path to the observation data
     # @param [String] meta_path the path to the meta data
-    def initialize(data_path, meta_path)
-      meta_data = DwdObservations::MetaReader.new(meta_path).meta_data
+    # @param [String] measurand the measurand description for the observation data
+    def initialize(data_path, meta_path, measurand)
+      meta_data = DwdObservations::MetaReader.new(meta_path, measurand).meta_data
       @data_repository = RubyUtils::DataRepository.new(meta_data)
       # drop the first element since it holds the column informations
       read_data(RubyUtils::FileReader.new(data_path, ";").data.drop(1))

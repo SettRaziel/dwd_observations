@@ -24,6 +24,26 @@ describe DwdObservations::Parameter::ParameterRepository do
   end
 
   describe ".new" do
+    context "given the json flag" do
+      it "create the repository with the correct flags" do
+        arguments = ["-j", "-f", "filename"]
+        parameter_repository = DwdObservations::Parameter::ParameterRepository.new(arguments)
+        expect(parameter_repository.parameters[:json]).to eq(true)
+      end
+    end
+  end
+
+  describe ".new" do
+    context "given the json flag" do
+      it "create the repository with the correct flags" do
+        arguments = ["--json", "--file", "filename"]
+        parameter_repository = DwdObservations::Parameter::ParameterRepository.new(arguments)
+        expect(parameter_repository.parameters[:json]).to eq(true)
+      end
+    end
+  end
+
+  describe ".new" do
     context "given only the filename" do
       it "create the repository with the correct filename" do
         arguments = ["-f", "filename"]

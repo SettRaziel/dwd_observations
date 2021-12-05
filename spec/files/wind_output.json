@@ -1,0 +1,437 @@
+{
+  "meta_data": {
+    "station": {
+      "name": "Berlin-Tempelhof",
+      "descriptor": 433,
+      "elevation": 48.0,
+      "coordinate": {
+        "x": 13.4021,
+        "y": 52.4675
+      }
+    },
+    "start_date": "1928-01-01 00:00:00 +0100",
+    "measurand": "Wind"
+  },
+  "weather_data": [
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-02 12:00:00 +0200",
+      "quality_level": 1,
+      "speed": 4.6,
+      "direction": 110
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-02 13:00:00 +0200",
+      "quality_level": 1,
+      "speed": 5.1,
+      "direction": 100
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-02 14:00:00 +0200",
+      "quality_level": 1,
+      "speed": 5.8,
+      "direction": 100
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-02 15:00:00 +0200",
+      "quality_level": 1,
+      "speed": 6.3,
+      "direction": 100
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-02 16:00:00 +0200",
+      "quality_level": 1,
+      "speed": 6.2,
+      "direction": 90
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-02 17:00:00 +0200",
+      "quality_level": 1,
+      "speed": 5.8,
+      "direction": 90
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-02 18:00:00 +0200",
+      "quality_level": 1,
+      "speed": 5.1,
+      "direction": 90
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-02 19:00:00 +0200",
+      "quality_level": 1,
+      "speed": 5.2,
+      "direction": 90
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-02 20:00:00 +0200",
+      "quality_level": 1,
+      "speed": 5.2,
+      "direction": 90
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-02 21:00:00 +0200",
+      "quality_level": 1,
+      "speed": 5.4,
+      "direction": 90
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-02 22:00:00 +0200",
+      "quality_level": 1,
+      "speed": 6.1,
+      "direction": 90
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-02 23:00:00 +0200",
+      "quality_level": 1,
+      "speed": 5.9,
+      "direction": 80
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-03 00:00:00 +0200",
+      "quality_level": 1,
+      "speed": 6.1,
+      "direction": 80
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-03 01:00:00 +0200",
+      "quality_level": 1,
+      "speed": 5.7,
+      "direction": 90
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-03 02:00:00 +0200",
+      "quality_level": 1,
+      "speed": 5.5,
+      "direction": 80
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-03 03:00:00 +0200",
+      "quality_level": 1,
+      "speed": 5.8,
+      "direction": 80
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-03 04:00:00 +0200",
+      "quality_level": 1,
+      "speed": 5.7,
+      "direction": 90
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-03 05:00:00 +0200",
+      "quality_level": 1,
+      "speed": 5.8,
+      "direction": 90
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-03 06:00:00 +0200",
+      "quality_level": 1,
+      "speed": 5.1,
+      "direction": 90
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-03 07:00:00 +0200",
+      "quality_level": 1,
+      "speed": 5.2,
+      "direction": 80
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-03 08:00:00 +0200",
+      "quality_level": 1,
+      "speed": 5.3,
+      "direction": 90
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-03 09:00:00 +0200",
+      "quality_level": 1,
+      "speed": 5.2,
+      "direction": 90
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-03 10:00:00 +0200",
+      "quality_level": 1,
+      "speed": 5.3,
+      "direction": 80
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-03 11:00:00 +0200",
+      "quality_level": 1,
+      "speed": 6.1,
+      "direction": 80
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-03 12:00:00 +0200",
+      "quality_level": 1,
+      "speed": 6.3,
+      "direction": 80
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-03 13:00:00 +0200",
+      "quality_level": 1,
+      "speed": 6.7,
+      "direction": 100
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-03 14:00:00 +0200",
+      "quality_level": 1,
+      "speed": 5.7,
+      "direction": 110
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-03 15:00:00 +0200",
+      "quality_level": 1,
+      "speed": 5.1,
+      "direction": 110
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-03 16:00:00 +0200",
+      "quality_level": 1,
+      "speed": 4.6,
+      "direction": 110
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-03 17:00:00 +0200",
+      "quality_level": 1,
+      "speed": 3.5,
+      "direction": 110
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-03 18:00:00 +0200",
+      "quality_level": 1,
+      "speed": 2.4,
+      "direction": 120
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-03 19:00:00 +0200",
+      "quality_level": 1,
+      "speed": 1.7,
+      "direction": 140
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-03 20:00:00 +0200",
+      "quality_level": 1,
+      "speed": 2.2,
+      "direction": 150
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-03 21:00:00 +0200",
+      "quality_level": 1,
+      "speed": 2.3,
+      "direction": 160
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-03 22:00:00 +0200",
+      "quality_level": 1,
+      "speed": 3.9,
+      "direction": 220
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-03 23:00:00 +0200",
+      "quality_level": 1,
+      "speed": 3.6,
+      "direction": 240
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-04 00:00:00 +0200",
+      "quality_level": 1,
+      "speed": 3.4,
+      "direction": 220
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-04 01:00:00 +0200",
+      "quality_level": 1,
+      "speed": 3.8,
+      "direction": 220
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-04 02:00:00 +0200",
+      "quality_level": 1,
+      "speed": 2.3,
+      "direction": 230
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-04 03:00:00 +0200",
+      "quality_level": 1,
+      "speed": 2.3,
+      "direction": 240
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-04 04:00:00 +0200",
+      "quality_level": 1,
+      "speed": 1.5,
+      "direction": 260
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-04 05:00:00 +0200",
+      "quality_level": 1,
+      "speed": 1.1,
+      "direction": 200
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-04 06:00:00 +0200",
+      "quality_level": 1,
+      "speed": 1.8,
+      "direction": 170
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-04 07:00:00 +0200",
+      "quality_level": 1,
+      "speed": 1.7,
+      "direction": 210
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-04 08:00:00 +0200",
+      "quality_level": 1,
+      "speed": 1.8,
+      "direction": 200
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-04 09:00:00 +0200",
+      "quality_level": 1,
+      "speed": 2.2,
+      "direction": 190
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-04 10:00:00 +0200",
+      "quality_level": 1,
+      "speed": 2.8,
+      "direction": 200
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-04 11:00:00 +0200",
+      "quality_level": 1,
+      "speed": 5.1,
+      "direction": 220
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-04 12:00:00 +0200",
+      "quality_level": 1,
+      "speed": 5.4,
+      "direction": 220
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-04 13:00:00 +0200",
+      "quality_level": 1,
+      "speed": 6.6,
+      "direction": 230
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-04 14:00:00 +0200",
+      "quality_level": 1,
+      "speed": 5.1,
+      "direction": 230
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-04 15:00:00 +0200",
+      "quality_level": 1,
+      "speed": 5.6,
+      "direction": 220
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-04 16:00:00 +0200",
+      "quality_level": 1,
+      "speed": 3.5,
+      "direction": 220
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-04 17:00:00 +0200",
+      "quality_level": 1,
+      "speed": 4.0,
+      "direction": 230
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-04 18:00:00 +0200",
+      "quality_level": 1,
+      "speed": 1.8,
+      "direction": 200
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-04 19:00:00 +0200",
+      "quality_level": 1,
+      "speed": 1.1,
+      "direction": 170
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-04 20:00:00 +0200",
+      "quality_level": 1,
+      "speed": 1.8,
+      "direction": 160
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-04 21:00:00 +0200",
+      "quality_level": 1,
+      "speed": 2.0,
+      "direction": 150
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-04 22:00:00 +0200",
+      "quality_level": 1,
+      "speed": 2.1,
+      "direction": 150
+    },
+    {
+      "station_id": 433,
+      "timestamp": "2020-10-04 23:00:00 +0200",
+      "quality_level": 1,
+      "speed": 1.7,
+      "direction": 130
+    }
+  ]
+}

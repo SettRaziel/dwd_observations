@@ -9,7 +9,8 @@ module DwdObservations
 
     # method to specify and add the help entries with help text only
     def self.add_single_help_entries
-      nil
+      add_simple_text(:json, " -j, --json      ", 
+            "exports the observation values as a json object")
     end
 
     # method to specify and add the help entries with help text and one argument

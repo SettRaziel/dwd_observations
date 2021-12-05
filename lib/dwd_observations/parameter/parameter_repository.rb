@@ -16,7 +16,8 @@ module DwdObservations
       # @param [Array] unflagged_arguments the argument array
       def process_argument(arg)
         case arg
-          when *@mapping[:measurand]       then create_argument_entry(:measurand)
+          when *@mapping[:json] then @parameters[:json] = true
+          when *@mapping[:measurand] then create_argument_entry(:measurand)
           when /-[a-z]|--[a-z]+/ then raise_invalid_parameter(arg)
         else
           raise_invalid_parameter(arg)
@@ -26,6 +27,7 @@ module DwdObservations
 
       # method to define the input string values that will match a given paramter symbol
       def define_mapping
+        @mapping[:json] = ["-j", "--json"]
         @mapping[:measurand] = ['-m', '--measurand']
       end
 

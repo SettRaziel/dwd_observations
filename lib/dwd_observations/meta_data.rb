@@ -13,11 +13,16 @@ module DwdObservations
     # @return [Time] the start date of the first data measurement at this station
     attr_reader :start_date
 
+    # @return [String] the description of the measurand that is read in the repository
+    attr_reader :measurand
+
     # initialization
     # @param [Array] header_line the head line of a data set holding the relevant meta information
-    # @param [String] start_date the start date for the first data value of the station 
-    def initialize(header_line, start_date=nil)
+    # @param [String] measurand the measurand description for the observation data
+    # @param [String] start_date the optional start date for the first data value of the station 
+    def initialize(header_line, measurand, start_date=nil)
       super(header_line)
+      @measurand = measurand
       if (start_date != nil)
         @start_date = RubyUtils::ParameterConverter.convert_time_parameter(start_date)
       end

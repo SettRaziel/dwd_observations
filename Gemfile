@@ -6,6 +6,7 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
 gem "simplecov", require: false, group: :test
 
-gem 'ruby_utils', github: 'SettRaziel/ruby_utils'
+gem "json"
+gem "ruby_utils", github: "SettRaziel/ruby_utils"
 
 gemspec
