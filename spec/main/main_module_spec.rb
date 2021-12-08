@@ -46,8 +46,7 @@ describe DwdObservations do
         expect { 
           arguments = ["-j", "-f", File.join(DATA_ROOT, "../files/wind_hourly_00433.txt")]
           DwdObservations.initialize(arguments)
-        }.to output("Missing parameter --measurand, dont have data to work with.".red + "\n" +\
-          "For help type: ruby <script> --help".green + "\n").to_stdout
+        }.to raise_error(ArgumentError)
       end
     end
   end

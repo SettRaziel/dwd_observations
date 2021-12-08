@@ -3,7 +3,7 @@ require "dwd_observations"
 
 begin
   DwdObservations.initialize(ARGV)
-  parameter_repository = DwdObservations.parameter_repository
+  parameter_repository = DwdObservations.parameter_handler.repository
   
   if (parameter_repository.parameters[:help])
     DwdObservations.print_help
