@@ -17,9 +17,13 @@ help usage for parameter: ruby <script> <parameter> (-h | --help)
 DWD observations help:
  -h, --help      show help text
  -v, --version   prints the current version of the project
+ -f, --file      argument: <file>; optional parameter that indicates a filepath to a readable file
  -j, --json      exports the observation values as a json object
  -m, --measurand argument: <measurand>; specifies the considered measurand value
 ```
+Mandatory parameters are:
+* file: The file parameter holds the path to the required input file
+* measurand: To determine the correct measurand, this parameter needs to be set
 
 ## Documentation
 The documentation will be created with yard and published at a later point.
