@@ -12,8 +12,8 @@ module DwdObservations
   # Dummy class to get access to the instance variables
   class << self
 
-    # @return [Parameter::ParameterRepository] the handler controlling the parameters
-    attr_reader :parameter_repository
+    # @return [Parameter::ParameterHandler] the handler controlling the parameters
+    attr_reader :parameter_handler
 
     # @return [DwdObservations::Reader] the reader holding the repository with the data
     attr_reader :data_reader
@@ -21,8 +21,9 @@ module DwdObservations
     # main entry point and initialization
     # @param [Array] arguments the input values from the terminal input ARGV
     def initialize(arguments)
-      @parameter_repository = Parameter::ParameterRepository.new(arguments)
-      if (!@parameter_repository.parameters[:help] && !@parameter_repository.parameters[:version])
+      @parameter_handler = Parameter::ParameterHandler.new(arguments)
+      if (!@parameter_handler.repository.parameters[:help] && 
+          !@parameter_handler.repository.parameters[:version])
         initialize_data
       end
     end
@@ -31,31 +32,28 @@ module DwdObservations
 
     # method to read the data for the given measurand
     def initialize_data
-      measurand = @parameter_repository.parameters[:measurand]
-      if (measurand == nil)
-        print_error("Missing parameter --measurand, dont have data to work with.")
-      else
-        filepath = @parameter_repository.parameters[:file]
-        meta_path = File.join(File.dirname(filepath), "Metadaten_Geographie.txt")
-        @data_reader = DwdObservations::Reader.determine_reader_for(measurand, filepath, meta_path)
-      end
+      measurand = @parameter_handler.repository.parameters[:measurand]
+      filepath = @parameter_handler.repository.parameters[:file]
+      meta_path = File.join(File.dirname(filepath), "Metadaten_Geographie.txt")
+      @data_reader = DwdObservations::Reader.determine_reader_for(measurand, filepath, meta_path)
     end
 
   end
 
   # method for enable the logic for the provided parameters
   def self.handle_parameters
-    if (@parameter_repository.parameters[:json])
+    if (@parameter_handler.repository.parameters[:json])
       converter = DwdObservations::JsonConverter::MeasurandConverter.new(@data_reader.data_repository)
-      converter.convert(File.dirname(@parameter_repository.parameters[:file]))
+      converter.convert(File.dirname(@parameter_handler.repository.parameters[:file]))
     end
     nil
   end
 
   # call to print the help text
   def self.print_help
-    if (@parameter_repository != nil && @parameter_repository.parameters[:help] != nil)
-      DwdObservations::HelpOutput.print_help_for(@parameter_repository.parameters[:help])
+    if (@parameter_handler.repository != nil && 
+        @parameter_handler.repository.parameters[:help] != nil)
+      DwdObservations::HelpOutput.print_help_for(@parameter_handler.repository.parameters[:help])
     else
       print_error("Error: Module not initialized. Run DwdObservations.new(ARGV)")
     end
