@@ -21,7 +21,9 @@ describe DwdObservations do
                     " -j, --json      ".light_blue + \
                     "exports the observation values as a json object\n" + \
                     " -m, --measurand ".light_blue + "argument:".red + " <measurand>".yellow  + \
-                    "; specifies the considered measurand value\n").to_stdout
+                    "; specifies the considered measurand value\n" + \
+                    " --meta          ".light_blue + "argument:".red + " <filepath>".yellow  + \
+                    "; specifies the filepath to the meta data\n").to_stdout
       end
     end
   end

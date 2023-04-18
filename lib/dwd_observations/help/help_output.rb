@@ -17,6 +17,8 @@ module DwdObservations
     def self.add_one_argument_help_entries
       add_single_argument_text(:measurand, " -m, --measurand ", " <measurand>",
             "; specifies the considered measurand value")
+      add_single_argument_text(:meta, " --meta          ", " <filepath>",
+            "; specifies the filepath to the meta data")
       nil
     end
 
