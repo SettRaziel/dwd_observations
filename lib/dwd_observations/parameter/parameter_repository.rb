@@ -17,6 +17,7 @@ module DwdObservations
       def process_argument(arg)
         case arg
           when *@mapping[:json] then @parameters[:json] = true
+          when *@mapping[:meta] then create_argument_entry(:meta)
           when *@mapping[:measurand] then create_argument_entry(:measurand)
           when /-[a-z]|--[a-z]+/ then raise_invalid_parameter(arg)
         else
@@ -29,6 +30,7 @@ module DwdObservations
       def define_mapping
         @mapping[:json] = ["-j", "--json"]
         @mapping[:measurand] = ['-m', '--measurand']
+        @mapping[:meta] = ['--meta']
       end
 
     end

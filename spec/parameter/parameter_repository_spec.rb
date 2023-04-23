@@ -44,6 +44,16 @@ describe DwdObservations::Parameter::ParameterRepository do
   end
 
   describe ".new" do
+    context "given the meta flag" do
+      it "create the repository with the correct flags" do
+        arguments = ["--meta", "path/to/meta", "--file", "filename"]
+        parameter_repository = DwdObservations::Parameter::ParameterRepository.new(arguments)
+        expect(parameter_repository.parameters[:meta]).to eq("path/to/meta")
+      end
+    end
+  end
+
+  describe ".new" do
     context "given only the filename" do
       it "create the repository with the correct filename" do
         arguments = ["-f", "filename"]
