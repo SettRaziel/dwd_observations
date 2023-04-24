@@ -68,6 +68,21 @@ describe DwdObservations do
     end
   end
 
+  describe "#handle_parameters" do
+    context "given an array of parameters without help parameter and meta flag" do
+      it "reads the data and generate the json output" do
+        arguments = ["-m", "wind", "-j", "--meta", META_DATA, "-f", File.join(DATA_ROOT, "../files/wind_hourly_00433.txt")]
+        DwdObservations.initialize(arguments)
+        DwdObservations.handle_parameters
+
+        expect(FileUtils.compare_file(File.join(DATA_ROOT,"output.json"), File.join(DATA_ROOT,"wind_output.json"))).to be_truthy
+
+        # clean up data from the test and catch errors since they should not let the test fail
+        File.delete(File.join(DATA_ROOT,"output.json"))
+      end
+    end
+  end
+
   describe "#print_version" do
     context "given the module" do
       it "print the version text" do

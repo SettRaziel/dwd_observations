@@ -34,8 +34,18 @@ module DwdObservations
     def initialize_data
       measurand = @parameter_handler.repository.parameters[:measurand]
       filepath = @parameter_handler.repository.parameters[:file]
-      meta_path = File.join(File.dirname(filepath), "Metadaten_Geographie.txt")
+      meta_path = initialize_meta_path(filepath)
       @data_reader = DwdObservations::Reader.determine_reader_for(measurand, filepath, meta_path)
+    end
+
+    # method to set the meta data path when provided by the correponding parameter
+    # @param [String] filepath the filepath stored in the file parameter
+    # @return [String] the path to the meta data file
+    def initialize_meta_path(filepath)
+      if (@parameter_handler.repository.parameters[:meta] != nil)
+        return @parameter_handler.repository.parameters[:meta]
+      end
+      File.join(File.dirname(filepath), "Metadaten_Geographie.txt")
     end
 
   end
