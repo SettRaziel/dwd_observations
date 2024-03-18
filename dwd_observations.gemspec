@@ -17,5 +17,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency "rspec", "~> 3.9", ">= 3.9.1"
   s.add_development_dependency "bundler-audit", "~> 0.9.0", ">= 0.9.0"    
 
-  s.add_dependency "ruby_utils", "~> 0.2.1", ">= 0.2.1"
+  s.add_dependency "ruby_utils", ">= 0.2.1", "< 0.4.0"
 end
